@@ -40,6 +40,9 @@ jobs:
     steps:
       - name: Verify source branch
         run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Source branch: ${{ github.head_ref }}"
+          echo "Target branch: ${{ github.base_ref }}"
           if [[ "${{ github.head_ref }}" != "dev" ]]; then
             echo "❌ Only dev branch can merge into main."
             exit 1

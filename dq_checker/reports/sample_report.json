@@ -1,0 +1,30 @@
+{
+  "run_date": "2026-03-08",
+  "checks": [
+    {
+      "rule": "Check for missing patient IDs",
+      "status": "PASS",
+      "issues_found": 0
+    },
+    {
+      "rule": "Check for duplicate encounters",
+      "status": "FAIL",
+      "issues_found": 12
+    },
+    {
+      "rule": "Validate gender values",
+      "status": "PASS",
+      "issues_found": 0
+    },
+    {
+      "rule": "Check birth_date format",
+      "status": "PASS",
+      "issues_found": 0
+    }
+  ],
+  "summary": {
+    "total_rules": 4,
+    "passed": 3,
+    "failed": 1
+  }
+}
