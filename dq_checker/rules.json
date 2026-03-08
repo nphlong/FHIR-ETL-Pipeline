@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "name": "Check for missing patient IDs",
+      "type": "not_null",
+      "field": "patient_id"
+    },
+    {
+      "name": "Check for duplicate encounters",
+      "type": "unique",
+      "field": "encounter_id"
+    },
+    {
+      "name": "Validate gender values",
+      "type": "in_list",
+      "field": "gender",
+      "allowed_values": ["male", "female", "other", "unknown"]
+    },
+    {
+      "name": "Check birth_date format",
+      "type": "date_format",
+      "field": "birth_date",
+      "format": "YYYY-MM-DD"
+    }
+  ]
+}
