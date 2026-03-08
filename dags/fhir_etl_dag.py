@@ -4,7 +4,9 @@ from datetime import datetime
 
 def extract_fhir_data():
     """Extract FHIR JSON bundles from source system."""
-    pass
+    import shutil
+    shutil.copy("data/sample_fhir.json", "/tmp/fhir.json")
+    print("Extracted sample FHIR data to /tmp/fhir.json")
 
 def transform_to_csv():
     """Transform FHIR JSON into normalized CSV format."""
