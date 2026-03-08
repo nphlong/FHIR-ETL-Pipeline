@@ -1,0 +1,30 @@
+# Ignore Airflow DAG logs and temp files
+logs/
+*/logs/
+
+# Ignore Airflow plugins (if you mount them locally)
+plugins/
+
+# Ignore raw data mounted into containers
+data/
+
+# Ignore database volumes
+postgres_data/
+redis_data/
+
+# Ignore environment files
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Docker artifacts
+*.pid
+*.log
+*.sock
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/

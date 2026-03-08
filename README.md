@@ -20,7 +20,7 @@ GitHub Actions validate branch naming conventions and enforce that only `dev →
 
 ```mermaid
 flowchart LR
-    A[FHIR Datasets] --> B[Airflow ETL Pipeline]
+    A[FHIR Data Sources] --> B[Airflow ETL Pipeline]
     B --> C[FHIR-to-CSV Converter]
     C --> D[Cleaned & Standardized CSV]
     D --> E[AWS S3 Data Loader]
